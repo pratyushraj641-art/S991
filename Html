@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spice Garden | Fine Dining Restaurant</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background:#fafafa; color:#222; }header {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1604908177522-402f0c6d0d96');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 { font-size: 3.5rem; letter-spacing: 2px; }
+header p { margin: 15px 0; font-size: 1.2rem; }
+header button {
+  padding: 12px 30px;
+  border: none;
+  background: #c59d5f;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+nav {
+  position: fixed;
+  top: 0; width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+nav h2 { color:#c59d5f; }
+nav ul { list-style: none; display: flex; gap: 25px; }
+nav a { color:white; text-decoration:none; font-weight:500; }
+
+section { padding: 80px 10%; }
+
+.about, .contact { text-align:center; }
+.about h2, .menu h2, .contact h2 { font-size:2.5rem; margin-bottom:20px; }
+
+.menu-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+}
+
+.menu-item {
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.menu-item img { width:100%; height:200px; object-fit:cover; }
+.menu-item div { padding:20px; }
+.menu-item h3 { margin-bottom:10px; }
+.price { color:#c59d5f; font-weight:bold; }
+
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:50px;
+}
+
+  </style>
+</head>
+<body><nav>
+  <h2>Spice Garden</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav><header id="home">
+  <div>
+    <h1>Authentic Indian Flavours</h1>
+    <p>Premium taste • Fresh ingredients • Elegant dining</p>
+    <button>Reserve a Table</button>
+  </div>
+</header><section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Spice Garden is a premium Indian restaurant offering authentic North Indian cuisine with a modern touch. We serve quality food in a warm and elegant atmosphere.</p>
+</section><section class="menu" id="menu">
+  <h2>Our Special Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1604908177522-402f0c6d0d96" />
+      <div>
+        <h3>Soya Chaap Masala</h3>
+        <p>Rich tomato gravy with aromatic spices</p>
+        <span class="price">₹260</span>
+      </div>
+    </div><div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc" />
+  <div>
+    <h3>Veg Thali</h3>
+    <p>Complete Indian traditional platter</p>
+    <span class="price">₹320</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7" />
+  <div>
+    <h3>Dal Makhani</h3>
+    <p>Slow cooked black lentils with butter</p>
+    <span class="price">₹240</span>
+  </div>
+</div>
+
+  </div>
+</section><section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 New Delhi, India</p>
+  <p>📞 +91 9XXXXXXXXX</p>
+  <p>🕒 11:00 AM – 11:00 PM</p>
+</section><footer>
+  <p>© 2026 Spice Garden Restaurant. All Rights Reserved.</p>
+</footer></body>
+</html>
